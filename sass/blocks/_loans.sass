@@ -1,0 +1,165 @@
+.loans
+    position: relative
+    min-height: 1024px
+    background: #FFFFFF
+    &__maintitle
+        padding: 32px 0px 32px 64px
+        font-weight: 600
+        font-size: 30px
+        line-height: 36px
+        color: #303247
+    &__divider
+        border: 1px solid rgba(48, 50, 71, 0.1)
+    &__inner
+        position: relative
+        display: flex
+        justify-content: space-between
+        padding: 32px
+        margin: 32px 0px 0px 64px
+        width: 676px
+        min-height: 134px
+        border: 1px solid rgba(48, 50, 71, 0.1)
+        border-radius: 20px
+    &__text
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+    &__title
+        font-weight: 600
+        font-size: 25px
+        line-height: 30px
+        color: #303247
+        margin-bottom: 20px
+    &__descr
+        font-weight: 400
+        font-size: 20px
+        line-height: 24px
+        color: #303247
+    &__button
+        display: flex
+        align-items: flex-end
+    &__invested
+        display: none
+        position: absolute
+        top: 13px
+        right: 32px
+        font-weight: 600
+        font-size: 16px
+        line-height: 20px
+        text-align: right
+        color: #51A571
+    &__btn
+        display: flex
+        align-items: center
+        padding: 16px 32px
+        width: 137px
+        height: 56px
+        font-weight: 500
+        font-size: 20px
+        line-height: 24px
+        text-transform: uppercase
+        color: #303247
+        background: #F7E308
+        border: none
+        border-radius: 5px
+
+.total
+    width: 683px
+    display: flex
+    justify-content: space-between
+    padding: 0px 0px 0px 64px
+    margin-top: 60px
+    &__title
+        font-weight: 600
+        font-size: 20px
+        line-height: 24px
+        color: #303247
+    &__amount
+        font-weight: 600
+        font-size: 20px
+        line-height: 24px
+        color: #303247
+
+.modal
+    display: none
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 1000
+    width: 100%
+    height: 100%
+    overflow: hidden
+    background: rgba(26, 26, 26, 0.8)
+    &__dialog
+        max-width: 630px
+        min-height: 499px
+        margin-top: 262px
+        background: #FFFFFF
+        border-radius: 5px
+        transform: translateY(25%)
+        top: 50%
+        margin: 0 auto
+    &__content
+        position: relative
+        width: 100%
+        padding: 64px
+        background-color: #fff
+        max-height: 80vh
+        overflow-y: auto
+    &__title
+        font-weight: 600
+        font-size: 35px
+        line-height: 42px
+        color: #303247
+    &__subtitle
+        font-weight: 400
+        font-size: 20px
+        line-height: 24px
+        margin-top: 32px
+        color: #303247
+    &__available
+        font-weight: 400
+        font-size: 20px
+        line-height: 24px
+        margin-top: 32px
+        color: #303247
+    &__ends
+        font-weight: 400
+        font-size: 20px
+        line-height: 24px
+        color: #303247
+    &__amount
+        font-weight: 600
+        font-size: 30px
+        line-height: 36px
+        margin-top: 64px
+        color: #303247
+    &__input
+        padding: 16px 32px
+        border: 1px solid rgba(48, 50, 71, 0.1)
+        border-radius: 5px
+        text-align: right
+        width: 328px
+        height: 56px
+        &-wrapper
+            display: flex
+            justify-content: space-between
+            margin-top: 29px
+    &__close
+        position: absolute
+        top: 16px
+        right: 32px
+        width: 16px
+        height: 16px
+        font-size: 30px
+        color: #000
+        font-weight: 700
+        border: none
+        background-color: transparent
+        cursor: pointer
+
+.hide
+    display: none
+
+.show
+    display: block

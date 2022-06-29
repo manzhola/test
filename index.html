@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHI SOFTWARE</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="loans">
+        <div class="loans__maintitle">Current Loans</div>
+        <div class="loans__divider"></div>
+        <div class="loans__inner">
+            <div class="loans__text">
+                <div class="loans__title">Loan name 1</div>
+                <div class="loans__descr">Loan details and values</div>
+            </div>
+            <div class="loans__button">
+                <div class="loans__invested">Invested</div>
+                <button data-modal class="loans__btn">invest</button>
+            </div>
+        </div>
+
+        <div class="loans__inner">
+            <div class="loans__text">
+                <div class="loans__title">Loan name 2</div>
+                <div class="loans__descr">Loan details and values</div>
+            </div>
+            <div class="loans__button">
+                <div class="loans__invested">Invested</div>
+                <button data-modal class="loans__btn">invest</button>
+            </div>
+        </div>
+
+        <div class="loans__inner">
+            <div class="loans__text">
+                <div class="loans__title">Loan name 3</div>
+                <div class="loans__descr">Loan details and values</div>
+            </div>
+            
+            <div class="loans__button">
+                <div class="loans__invested">Invested</div>
+                <button data-modal class="loans__btn">invest</button>
+            </div>
+        </div>
+
+        <div class="total">
+            <div class="total__title">Total amount available for investment:</div>
+            <div class="total__amount">$238,456</div>
+        </div>
+
+        <div class="modal">
+            <div class="modal__dialog">
+                <div class="modal__content">
+                    <form action="#">
+                        <div data-close class="modal__close">&times;</div>
+                        <div class="modal__title">Invest in Loan</div>
+                        <div class="modal__subtitle">Loan title you've clicked</div>
+                        <div class="modal__available">Amount available: <span>$12,362</span></div>
+                        <div class="modal__ends">Loan ends in: <span>1 month 10 days</span></div>
+                        <div class="modal__amount">Investment amount</div>
+                        <div class="modal__input-wrapper">
+                            <input required placeholder="1,000" name="invest" type="number" class="modal__input">
+                            <button class="loans__btn modal__btn">invest</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/bundle.js"></script>
+</body>
+</html>
