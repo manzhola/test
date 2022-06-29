@@ -11,13 +11,7 @@ const postData = async (url, data) => {
 
 };
 const getResource = async (url) => {
-    const result = await fetch(url, {
-        origin: 'http://chi',
-        method: 'GET',
-        headers: {'Access-Control-Allow-Origin': '*'},
-        mode: 'cors',
-        cache: 'default'
-      });
+    const result = await fetch(url, {mode: 'cors'});
 
     if (!result.ok) {
         throw new Error(`Could not fetch ${url}, status ${result.status}`);
